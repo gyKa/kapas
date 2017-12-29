@@ -2,6 +2,11 @@
 
 A web-based tool for bookmarks management.
 
+## Requirements
+
+* PHP >= 7.0.0
+* database
+
 ## Production setup
 
 There are few variables must be set at web server level:
