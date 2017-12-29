@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return \App\Bookmark::all();
-});
+Route::get('/', 'BookmarkController@index');
