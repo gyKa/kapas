@@ -12,4 +12,12 @@ class Bookmark extends Model
      * @var string
      */
     protected $table = 'bookmarks';
+
+    /**
+     * The tags that belong to the bookmark.
+     */
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
+    }
 }
