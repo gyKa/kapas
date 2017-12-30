@@ -2,10 +2,14 @@
 
 @section('content')
     @foreach ($bookmarks as $bookmark)
-        <p>{{ $bookmark->title }}</p>
+        <p>
+            <a href="{{ $bookmark->url }}">{{ $bookmark->title }}</a>
 
-        @foreach ($bookmark->tags as $tag)
-            <span>{{ $tag->title }}</span>
-        @endforeach
+            <div class="tags">
+                @foreach ($bookmark->tags as $tag)
+                    <span class="tag is-dark">{{ $tag->title }}</span>
+                @endforeach
+            </div>
+        </p>
     @endforeach
 @endsection
