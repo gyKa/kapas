@@ -15,7 +15,7 @@ class SeedBookmarksTable extends Migration
     {
         $bookmark = App\Bookmark::create([
             'title' => 'Clean Code Concepts Adapted for PHP',
-            'url' => 'https://laravel-news.com/clean-code-php-guide',
+            'url' => 'https://github.com/jupeter/clean-code-php',
         ]);
         $bookmark->tags()->saveMany([
             App\Tag::where('title', 'php')->first(),
